@@ -1,0 +1,96 @@
+/* style.qss */
+
+/* 主視窗的背景顏色設定為深灰色 */
+QMainWindow { 
+    background-color: #1A1A24; 
+}
+
+/* 所有純文字標籤的預設樣式：白色、微軟正黑體、粗體 */
+QLabel { 
+    color: #FFFFFF; 
+    font-family: '微軟正黑體'; 
+    font-weight: bold; 
+}
+
+/* 下拉式選單的正常狀態樣式 */
+QComboBox { 
+    background-color: #2A2A38; 
+    color: #FFFFFF; 
+    border: 2px solid #85C9DC; 
+    border-radius: 4px; 
+    padding: 5px; 
+    font-size: 13px; 
+}
+
+/* 當滑鼠游標停留在下拉式選單上方時，邊框變為粉紅色 */
+QComboBox:hover { 
+    border: 2px solid #E34D8D; 
+}
+
+/* 隱藏下拉式選單右側預設的醜醜箭頭按鈕 */
+QComboBox::drop-down { 
+    border: none; 
+}
+
+/* 啟動按鈕的正常狀態：背景為桃香藍，文字為深色 */
+QPushButton#btn_start { 
+    background-color: #85C9DC; 
+    color: #1A1A24; 
+    padding: 10px; 
+    font-size: 14px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+/* 啟動按鈕的懸停狀態：背景變為綠色 */
+QPushButton#btn_start:hover { 
+    background-color: #76BD53; 
+}
+
+/* 啟動按鈕的禁用狀態：背景與文字皆變為暗灰色，並移除邊框 */
+QPushButton#btn_start:disabled { 
+    background-color: #313244; 
+    color: #585B70; 
+    border: none; 
+}
+
+/* 停止按鈕的正常狀態：背景為紅色，文字為白色 */
+QPushButton#btn_stop { 
+    background-color: #D90E2C; 
+    color: #FFFFFF; 
+    padding: 10px; 
+    font-size: 14px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+/* 停止按鈕的懸停狀態：背景變為更深的紅色 */
+QPushButton#btn_stop:hover { 
+    background-color: #B30A23; 
+}
+
+/* 停止按鈕的禁用狀態：背景與文字皆變為暗灰色，並移除邊框 */
+QPushButton#btn_stop:disabled { 
+    background-color: #313244; 
+    color: #585B70; 
+    border: none; 
+}
+
+QPushButton#btn_open_log { 
+    background-color: #EEDA01; 
+    color: #171720; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+/* 終端機文字輸出框的樣式：背景極深，文字為淺紫色，使用等寬字體 */
+QTextEdit { 
+    background-color: #0D0D14; 
+    color: #A6ACCD; 
+    border: 1px solid #45475A; 
+    border-radius: 5px; 
+    font-family: 'Consolas', '微軟正黑體'; 
+    font-size: 12px; 
+    padding: 5px; 
+}

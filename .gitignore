@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+screen.png
+logs/
+bot_config.json
+old_version/
