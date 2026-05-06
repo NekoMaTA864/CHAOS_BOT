@@ -1,5 +1,5 @@
 # main_ui.py
-
+import os
 import sys
 import json
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -279,6 +279,7 @@ class MainWindow(QMainWindow):
 
 
 if __name__ == "__main__":
+    os.makedirs("logs/fail_cases", exist_ok=True)
     app = QApplication(sys.argv)
     app.setStyle("Fusion") 
     window = MainWindow()

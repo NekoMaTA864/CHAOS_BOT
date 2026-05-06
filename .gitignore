@@ -1,6 +1,8 @@
 .venv/
 __pycache__/
+*.py[cod]
 screen.png
 logs/
 bot_config.json
 old_version/
+screenshot.ipynb
