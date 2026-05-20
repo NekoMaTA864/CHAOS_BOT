@@ -53,7 +53,7 @@
 ## 開發挑戰與解決方案 (Challenges & Solutions)
 
 ### 1. 遊戲動態特效導致特徵比對失效
-- **問題：** Rouge 類型卡牌遊戲的局內戰鬥充滿隨機的視覺特效與動態介面，傳統 Template Matching 容錯率低，容易導致自動化流程卡死。
+- **問題：** Rogue 類型卡牌遊戲的局內戰鬥充滿隨機的視覺特效與動態介面，傳統 Template Matching 容錯率低，容易導致自動化流程卡死。
 - **解法：** 第一階段導入動態相似度閾值 (`max_val > 0.9`) 與狀態機重試機制。若連續迷失，則啟動 Watchdog 截圖存證並寫入 Log。此機制成功將系統轉化為「數據收集器」，為第二階段導入 AI 模型奠定資料基礎。
 
 ### 2. 多執行緒下的 UI 阻塞與崩潰
@@ -74,7 +74,7 @@ conda create -n chaos_bot python=3.10 -y
 conda activate chaos_bot
 ```
 
-###　2. 安裝依賴
+### 2. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
